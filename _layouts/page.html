@@ -15,7 +15,6 @@ format: page
         <figure>
           <img src="{{ "/images/" | absolute_url }}{{ page.image }}" alt="{{ page.title | strip_html }}" itemprop="image">
 
-
           {% if page.caption_url and page.caption %}
           <figcaption>
             <a href="{{ page.caption_url }}" target="_blank">{{ page.caption }}</a>
@@ -47,7 +46,7 @@ format: page
         {{ content }}
         
         <!-- img style -->
-        {% if page.img %}
+        {% if page.image %}
           <img src="{{ "../_posts/" | absolute_url }}{{ page.image }}" alt="{{ page.title | strip_html }}" itemprop="image">
         {% endif %}
 
