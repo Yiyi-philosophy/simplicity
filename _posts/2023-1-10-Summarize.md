@@ -40,7 +40,7 @@ See how images align in your posts. To position them left, right or in the middl
 
     - **Model quality**: expressive ability of encoding domain-specific knowledge
 
-    <img src="Summarize.assets/image (8).png" alt="image (8)" width="60%" />
+    <img src="_post/Summarize.assets/image (8).png" alt="image (8)" width="60%" />
 
   - **Sparse training method**: slow down training + ✖ represent commonly used transforms
 
