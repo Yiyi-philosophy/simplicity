@@ -28,9 +28,7 @@ format: page
         </figure>
         {% endif %}
 
-        <!-- image style -->
-        <!-- (A) BASE MUST BE PLACED IN HEAD SECTION -->
-        <base href="https://github.com/Yiyi-philosophy/simplicity/tree/master/_posts/" target="_blank">
+        
 
         {% if page.link %}
           <p class="subheadline">Link</p>
@@ -47,9 +45,11 @@ format: page
         {% if page.quote %}<blockquote style="margin: 0;">{{ page.quote }}</blockquote>{% endif %}
 
         
-        
+        <!-- image style -->
+        <!-- (A) BASE MUST BE PLACED IN HEAD SECTION -->
+        <a href="{{ "/_posts/" | absolute_url }}">
         {{ content }}
-
+        </a>
 
         {% if page.link %}
           <p><a class="button" href="{{ page.link }}" title="{{ site.data.ui[site.lang].source }} › {{ page.title }}">{{ site.data.ui[site.lang].check_out_link }}</a></p>
