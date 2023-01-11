@@ -42,7 +42,7 @@ See how images align in your posts. To position them left, right or in the middl
 
     <img src="Summarize.assets/image (8).png" alt="image (8)" width="60%" />
     <img src="./Summarize.assets/image (8).png" alt="image (8)" width="60%" />
-    <img src="_posts/Summarize.assets/image (8).png" alt="image (8)" width="60%" />
+    <img src="../_posts/Summarize.assets/image (8).png" alt="image (8)" width="60%" />
     <img src="../images/Summarize.assets/image (8).png" alt="image (8)" width="60%" />
     
 
