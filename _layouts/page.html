@@ -44,12 +44,12 @@ format: page
       <div class="main-content" itemprop="articleSection">
         {% if page.quote %}<blockquote style="margin: 0;">{{ page.quote }}</blockquote>{% endif %}
 
-        
-        <!-- image style -->
-        <!-- (A) BASE MUST BE PLACED IN HEAD SECTION -->
-        <a href="{{ "/_posts/" | absolute_url }}">
         {{ content }}
-        </a>
+        
+        <!-- img style -->
+        {% if page.img %}
+          <p><img src="{{ "/_posts/" | absolute_url }}{{ page.image }}" alt="{{ page.title | strip_html }}" itemprop="image"></p>
+        {% endif %}
 
         {% if page.link %}
           <p><a class="button" href="{{ page.link }}" title="{{ site.data.ui[site.lang].source }} › {{ page.title }}">{{ site.data.ui[site.lang].check_out_link }}</a></p>
