@@ -14,7 +14,7 @@ format: page
         {% elsif page.image %}
         <figure>
           <img src="{{ "/images/" | absolute_url }}{{ page.image }}" alt="{{ page.title | strip_html }}" itemprop="image">
-          
+
 
           {% if page.caption_url and page.caption %}
           <figcaption>
@@ -42,6 +42,10 @@ format: page
 
       <div class="main-content" itemprop="articleSection">
         {% if page.quote %}<blockquote style="margin: 0;">{{ page.quote }}</blockquote>{% endif %}
+        
+        <!-- image style -->
+        <img src="{{ "/_posts/" | absolute_url }}" alt="{{ page.title}}" itemprop="image">
+
         {{ content }}
 
 
