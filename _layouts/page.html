@@ -14,6 +14,7 @@ format: page
         {% elsif page.image %}
         <figure>
           <img src="{{ "/images/" | absolute_url }}{{ page.image }}" alt="{{ page.title | strip_html }}" itemprop="image">
+          
 
           {% if page.caption_url and page.caption %}
           <figcaption>
