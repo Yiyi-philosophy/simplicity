@@ -25,9 +25,9 @@
 
 
 # Title and description of your site
-title         : 'Simplicity'
-description   : 'Simplicity is a fast and easy to use jekyll theme for minimalists concentrating on elegance and flexibility.'
-slogan        : 'A Minimalistic Jekyll Theme'
+title         : 'Yiran Ding's Blog'
+description   : 'A man can be destroyed but not defeated.'
+slogan        : 'A will find a way.'
 
 
 
@@ -216,9 +216,9 @@ sass:
 # _/includes/_4_footer.html.
 
 socialmedia:
-    youtube: PhlowMedia
-    github: phlow
-    twitter: phlow
+    # youtube: PhlowMedia
+    github: Yiyi-philosophy
+    # twitter: phlow
     # facebook: phlow.media
     # soundcloud: phlow
     # tumblr: motizen
