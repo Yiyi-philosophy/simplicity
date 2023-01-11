@@ -4,8 +4,8 @@
 - name: "Introduction"
   url: "/introduction/"
 
-# - name: "What's special about <em>Simplicity</em>?"
-#   url: "/about-simplicity/"
+- name: "Top-Post: Schedule"
+  url: "/2023-12-31-Top-Post/"
 
 # - name: "All Articles"
 #   url: "/archive/"
