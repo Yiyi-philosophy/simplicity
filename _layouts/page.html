@@ -48,7 +48,7 @@ format: page
         
         <!-- img style -->
         {% if page.img %}
-          <p><img src="{{ "/_posts/" | absolute_url }}{{ page.image }}" alt="{{ page.title | strip_html }}" itemprop="image"></p>
+          <p><img src="{{ "/" | absolute_url }}{{ page.image }}" alt="{{ page.title | strip_html }}" itemprop="image"></p>
         {% endif %}
 
         {% if page.link %}
