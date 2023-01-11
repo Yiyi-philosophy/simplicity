@@ -32,7 +32,7 @@ slogan        : 'A will find a way.'
 
 
 # Build settings
-url           : 'https://yiyi-philosophy.github.io/simplicity/'
+url           : 'https://yiyi-philosophy.github.io/simplicity'
 baseurl       : ''
 markdown      : kramdown
 highlighter   : rouge
@@ -130,7 +130,7 @@ defaults:
       layout: page      # Set default layout to page
       show_meta: true   # Show metadata for all posts
       comments: false
-      author: 'Moritz »mo.« Sauer'     # Default author for posts
+      author: 'Yiran Ding'     # Default author for posts
 
 
 
@@ -140,7 +140,7 @@ defaults:
 #   ___/ / /___/ /_/ /
 #  /____/_____/\____/    Verify Website to Webmaster Tools
 
-google_site_verification   : 'Vk0IOJ2jwG_qEoG7fuEXYqv0m2rLa8P778Fi_GrsgEQ'
+# google_site_verification   : ''
 # bing_webmastertools_id   : ''
 # alexa_verify_id          : ''
 
@@ -218,7 +218,7 @@ sass:
 socialmedia:
     # youtube: PhlowMedia
     github: Yiyi-philosophy
-    # twitter: phlow
+    # twitter: 
     # facebook: phlow.media
     # soundcloud: phlow
     # tumblr: motizen
