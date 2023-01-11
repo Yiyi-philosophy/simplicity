@@ -28,6 +28,9 @@ format: page
         </figure>
         {% endif %}
 
+        <!-- image style -->
+        <!-- (A) BASE MUST BE PLACED IN HEAD SECTION -->
+        <base href="https://github.com/Yiyi-philosophy/simplicity/tree/master/_posts/" target="_blank">
 
         {% if page.link %}
           <p class="subheadline">Link</p>
@@ -43,11 +46,8 @@ format: page
       <div class="main-content" itemprop="articleSection">
         {% if page.quote %}<blockquote style="margin: 0;">{{ page.quote }}</blockquote>{% endif %}
 
-        <!-- image style -->
-        <img src="{{ "/_posts/" | absolute_url }}" alt="{{ page.title}}" itemprop="image">
-        var obj = document.setElementById(“imgid”);
-　　      var imgSrc = obj.setAttribute(“src”, tSrc);//把图片修改为目标路径
-　　      var realSrc = obj.setAttribute(“tSrc”, src);//把图片的路径暂存到tSrc
+        
+        
         {{ content }}
 
 
