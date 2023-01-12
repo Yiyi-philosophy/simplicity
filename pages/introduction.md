@@ -2,6 +2,7 @@
 subheadline: 'Introduction'
 title: 'About Me'
 header_image: 'BG/pedro-miranda-3OteGRYSKE0-unsplash.jpg'
+image: DYR.png
 link: /info/
 permalink: /introduction/
 ---

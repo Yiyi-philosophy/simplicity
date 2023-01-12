@@ -93,7 +93,7 @@ image: 'Summarize.assets/image (6).png'
 
   - Hybrid Back-propagation for Memory Efficiency
 
-  <img src="../images/Summarize.assets/image (7).png" alt="image (7)" width="50%" />
+  <img src="../images/Summarize.assets/image (7).png" alt="image (7)" width="80%" />
   
   - Quadratic Optimizer Implementation
       

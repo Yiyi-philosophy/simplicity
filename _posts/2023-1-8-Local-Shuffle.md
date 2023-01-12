@@ -68,7 +68,8 @@ image: 'Summarize.assets/image-20230109133337630.png'
   - $$O\left(\sqrt{\frac{1}{S|N|}}+\frac{\log |N|}{|N|}+\frac{|N| \epsilon(A, N)^2}{b|M|}\right)$$
 
     -  $S$ is the number of epochs, and $\epsilon(A, N)$ is the shuffling error of algorithm $A$ with the samples $N$
-    -  And shuffling error can be simplified: $\epsilon(A, h, N)=1-\frac{\sigma}{|N| !}$
+
+    -  And shuffling error can be simplified: $\epsilon(A, h, N)=1-\frac{\sigma}{|N !|}$
     
   - for practical dataset sizes and number of workers, the shuffling error $\epsilon(A, h, N)\rightarrow1$. 
 
@@ -78,9 +79,9 @@ image: 'Summarize.assets/image-20230109133337630.png'
   - while local shuffling starts to **converge slower** than its global counterpart, local partial shuffling provides almost identical accuracy trajectory with global sampling, which in turn with a feasible learning rate schedule could lead to **faster overall convergence** and thus a reduction in runtime.
   - On some larger datasets, **local shuffling accuracy == global shuffling**
     - Indicates that workers **do not** actually need to process a large portion of the whole dataset, and exchanging the gradient weights is **enough** to ensure convergence.
-    - <img src="../images/Summarize.assets/image-20230109155659742.png" alt="image-20230109155659742" width="40%;" />
+    - <img src="../images/Summarize.assets/image-20230109155659742.png" alt="image-20230109155659742" width="100%;" />
   - Since global shuffling reads from the PFS, the cost of I/O is much higher than those of local and partial shuffling.
-    - <img src="../images/Summarize.assets/image-20230109160514415.png" alt="image-20230109160514415" width="40%;" />
+    - <img src="../images/Summarize.assets/image-20230109160514415.png" alt="image-20230109160514415" width="100%;" />
 
 ## 6 RELATED WORK
 

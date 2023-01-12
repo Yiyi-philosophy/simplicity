@@ -32,8 +32,8 @@ slogan        : 'A will find a way.'
 
 
 # Build settings
-url           : 'https://yiyi-philosophy.github.io/simplicity'
-baseurl       : ''
+url           : 'https://yiyi-philosophy.github.io'
+baseurl       : '/simplicity'
 markdown      : kramdown
 highlighter   : rouge
 permalink     : /:categories/:title/
