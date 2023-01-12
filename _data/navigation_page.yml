@@ -2,7 +2,7 @@
   url: "/info/"
 
 - name: "Introduction"
-  url: "/introduction/"
+  url: "/info/"
 
 - name: "Schedule"
   url: "/Schedule/"
