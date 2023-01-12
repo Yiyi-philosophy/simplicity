@@ -8,6 +8,9 @@
 - name: "All Articles"
   url: "/archive/"
 
+- name: 'Schedule'
+  url: '/Schedule/'
+
 # - name: "Why I designed <em>Simplicity</em>"
 #   url: "/info/"
 
