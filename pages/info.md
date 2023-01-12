@@ -1,30 +1,81 @@
 ---
-subheadline: 'Introduction'
-title: 'About Me'
-header_image: 'BG/pedro-miranda-3OteGRYSKE0-unsplash'
+layout: introduction
+title: 'Schedule'
+image: DYR.png
 permalink: /info/
----
-A tough student who is searching a balance between many different characteristic of system, mainly on ML model and computer system.
 
+---
+
+Here is my 2023-2024 schedule.
 <!--more-->
 
+# 2023
+# Jan.
+- Send Motivation Letter
+- CUDA & MPI Practice
+- CS267 + AIsys
 
-# Online class
-## Will do
-- MIT 6.824: Distributed Systems
-- CMU 15-445: Intro to Database Systems
-- UCB CS162: Operation System
-- Stanford CS143: Compliers
+- 1.12
+  - Blog
+    - Intro
+    - Info
+    - helper/navigation.html - data/navigation_page
+      - MLsys
+      - ML
+      - AI_sys notes
+      - 
+    - posts: capital and small letter
+      - contents edit
+    - Google analyze
+  - Intern R-CCS: Talk with Miao
+- 1.15
+  - CS267
+  - 
+# Feb.
+- Send Motivation Letter
+- CUDA & MPI Practice
+- CS267 + AIsys
 
-## Ongoing
-- UCB CS267: Applications of Parallel Computers (Ongoing 17/26) My note
-- UCB AI-Sys: Machine Learning Systems (Ongoing 4/11)
+# Mar.
 
-## Done
-- CMU 15-213: Intro to Computer Systems (CSAPP),
-- MIT 6.s081: Operating System Engineering
-- THU: Data Structures
-- Hung-yi Lee: Machine learning 2021 My note
-- Andrew Ng: Machine learning
-- MIT 18.06: Linear Algebra
+# Apr.
+- TOFEL iBT test
 
+
+# May
+- Summer Intern (If possibly)
+
+
+# Jun.
+- Summer Intern (If possibly)
+
+
+# Jul.
+- Summer Intern (If possibly)
+
+
+# Aug.
+- Summer Intern (If possibly)
+
+
+# Sept.
+- Summer Intern - Back
+- Application Material
+  - CV
+  - SoP
+  - Recommendation Letter * 3
+- 
+
+# Oct.
+- 
+
+
+# Nov.
+
+
+
+# Dec.
+
+
+
+# 2024

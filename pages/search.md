@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Search"
+header_image: 'BG/eberhard-grossgasteiger-bnqdK7zvm4Y-unsplash.jpg'
 permalink: /search/
 sitemap: false
 ---
