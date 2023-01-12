@@ -1,6 +1,6 @@
 ---
-subheadline: 'Info'
-title: 'Why I designed *Simplicity*'
+subheadline: 'Introduction'
+title: 'My Self'
 permalink: /info/
 ---
 The idea behind *Simplicity* is to build a theme which is elegant, ver&shy;satile but still fast, without any clutter and the pur&shy;pose to make blogging and publishing as easy as possible.

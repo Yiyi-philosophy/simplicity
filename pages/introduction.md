@@ -1,18 +1,82 @@
 ---
 layout: introduction
-title: 'Hello'
-image: simplicity.jpg
+title: 'Schedule'
+header_image: 'BG/eberhard-grossgasteiger-9z_5Qjj5R6o-unsplash.jpg'
 link: /info/
 permalink: /introduction/
+
 ---
-Hello!
 
-My name is [*Simplicity*][1]! I am a free Jekyll theme programmend by [Moritz »mo.« Sauer][2]. My design is elegant and minimal. I deliver your content fast, without any Javascript but beautiful typography. I offer you lots of possibilities to let you craft wonderful blog postings.
+Here is my 2023-2024 schedule.
+<!--more-->
 
-Have a [look on my features][3]!
+# 2023
+# Jan.
+- Send Motivation Letter
+- CUDA & MPI Practice
+- CS267 + AIsys
+
+- 1.12
+  - Blog
+    - Intro
+    - Info
+    - helper/navigation.html - data/navigation_page
+      - MLsys
+      - ML
+      - AI_sys notes
+      - 
+    - posts: capital and small letter
+      - contents edit
+    - Google analyze
+  - Intern R-CCS: Talk with Miao
+- 1.15
+  - CS267
+  - 
+# Feb.
+- Send Motivation Letter
+- CUDA & MPI Practice
+- CS267 + AIsys
+
+# Mar.
+
+# Apr.
+- TOFEL iBT test
+
+
+# May
+- Summer Intern (If possibly)
+
+
+# Jun.
+- Summer Intern (If possibly)
+
+
+# Jul.
+- Summer Intern (If possibly)
+
+
+# Aug.
+- Summer Intern (If possibly)
+
+
+# Sept.
+- Summer Intern - Back
+- Application Material
+  - CV
+  - SoP
+  - Recommendation Letter * 3
+- 
+
+# Oct.
+- 
+
+
+# Nov.
 
 
 
- [1]: {{ "/info/" | absolute_url }}
- [2]: http://moritz.sauer.io
- [3]: {{ "/about-simplicity/" | absolute_url }}
+# Dec.
+
+
+
+# 2024
