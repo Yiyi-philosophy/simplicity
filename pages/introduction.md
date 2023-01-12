@@ -1,8 +1,8 @@
 ---
 layout: introduction
 title: 'Schedule'
-header_image: 'BG/eberhard-grossgasteiger-9z_5Qjj5R6o-unsplash.jpg'
 image: DYR.jpg
+header_image: 'BG/eberhard-grossgasteiger-9z_5Qjj5R6o-unsplash.jpg'
 link: /info/
 permalink: /introduction/
 
