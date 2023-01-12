@@ -44,11 +44,6 @@ format: page
         {% if page.quote %}<blockquote style="margin: 0;">{{ page.quote }}</blockquote>{% endif %}
 
         {{ content }}
-        
-        <!-- img style
-        {% if page.image %}
-          <img src="{{ "/_posts/" | absolute_url }}{{ page.image }}" alt="{{ page.title | strip_html }}" itemprop="image">
-        {% endif %} -->
 
         {% if page.link %}
           <p><a class="button" href="{{ page.link }}" title="{{ site.data.ui[site.lang].source }} › {{ page.title }}">{{ site.data.ui[site.lang].check_out_link }}</a></p>

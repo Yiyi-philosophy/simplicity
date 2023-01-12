@@ -1,11 +1,10 @@
 ---
-title: 'QUADRALIB: A PERFORMANT QUADRATIC NEURAL NETWORK LIBRARY FOR ARCHITECTURE OPTIMIZATION AND DESIGN EXPLORATION'
+title: 'QuadraLib: A Performant Quadratic Neural Network Library For Architecture Optimization And Design Exploration'
 image: 'Summarize.assets/image (6).png'
 ---
 
 <!--more-->
 
-# QUADRALIB: A PERFORMANT QUADRATIC NEURAL NETWORK LIBRARY FOR ARCHITECTURE OPTIMIZATION AND DESIGN EXPLORATION
 
 ## Abstract
 

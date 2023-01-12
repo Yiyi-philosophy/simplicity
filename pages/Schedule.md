@@ -1,6 +1,7 @@
 ---
-title: 'Top Post'
+title: 'Schedule'
 header_image: 'BG/eberhard-grossgasteiger-9z_5Qjj5R6o-unsplash.jpg'
+permalink: /Schedule/
 ---
 Here is my 2023-2024 schedule.
 <!--more-->
