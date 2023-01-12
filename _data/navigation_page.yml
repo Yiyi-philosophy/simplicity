@@ -4,8 +4,8 @@
 - name: "Introduction"
   url: "/introduction/"
 
-- name: "Top-Post: Schedule"
-  url: "/2023-12-31-Top-Post/"
+- name: "Schedule"
+  url: "/Schedule/"
 
 # - name: "All Articles"
 #   url: "/archive/"
