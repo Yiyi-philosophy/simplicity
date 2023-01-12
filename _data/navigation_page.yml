@@ -1,11 +1,9 @@
-- name: "Getting Started"
-  url: "/info/"
 
 - name: "Introduction"
   url: "/info/"
 
-- name: "Schedule"
-  url: "/Schedule/"
+- name: "My Schedule"
+  url: "/introduction/"
 
 # - name: "All Articles"
 #   url: "/archive/"
