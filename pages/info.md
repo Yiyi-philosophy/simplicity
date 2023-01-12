@@ -7,6 +7,8 @@ permalink: /info/
 A tough student who is searching a balance between many different characteristic of system, mainly on ML model and computer system.
 
 <!--more-->
+
+
 # Online class
 ## Will do
 - MIT 6.824: Distributed Systems
