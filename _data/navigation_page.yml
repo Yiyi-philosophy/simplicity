@@ -1,14 +1,14 @@
 
-- name: "Introduction"
+- name: "Topic"
   url: "/info/"
 
-- name: "My Schedule"
+- name: "About Me"
   url: "/introduction/"
 
 - name: "All Articles"
   url: "/archive/"
 
-- name: 'Schedule'
+- name: 'My Schedule'
   url: '/Schedule/'
 
 # - name: "Why I designed <em>Simplicity</em>"
