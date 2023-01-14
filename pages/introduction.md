@@ -2,7 +2,6 @@
 subheadline: 'Introduction'
 title: 'About Me'
 header_image: 'BG/pedro-miranda-3OteGRYSKE0-unsplash.jpg'
-link: /info/
 permalink: /introduction/
 ---
 A tough student who is searching a balance between many different characteristic of system, mainly on ML model and computer system.
