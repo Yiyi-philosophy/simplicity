@@ -1,6 +1,6 @@
 ---
 title: 'Schedule'
-header_image: 'BG/eberhard-grossgasteiger-9z_5Qjj5R6o-unsplash.jpg'
+header_image: 'BG/eberhard-grossgasteiger-bnqdK7zvm4Y-unsplash.jpg'
 permalink: /Schedule/
 ---
 Here is my 2023-2024 schedule.
