@@ -5,13 +5,13 @@ format: introduction
 <main role="main" id="content" class="row">
     <div class="small-5 medium-4 columns">
     {% if page.link %}
-    {% if page.link contains 'http' %}
-    {% assign domain = '' %}
-    {% elsif page.link == '#' %}
-    {% assign domain = '' %}
-    {% else %}
-    {% assign domain = site.url %}
-    {% endif %}
+        <!-- {% if page.link contains 'http' %}
+        {% assign domain = '' %}
+        {% elsif page.link == '#' %}
+        {% assign domain = '' %}
+        {% else %}
+        {% assign domain = site.url %}
+        {% endif %} -->
     <a href="{{ domain }}{{ site.baseurl }}{{ page.link }}"><img src="{{ "/images/" | absolute_url }}{{ page.image }}" alt="{{ page.title }}"></a>
     {% else %}
     <img src="{{ "/images/" | absolute_url }}{{ page.image }}" alt="{{ page.title }}">
