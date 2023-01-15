@@ -33,23 +33,23 @@ format: page
           <p class="subheadline">{{ page.subheadline }}</p>
         {% endif %}
 
-        <!-- Tags -->
-        {% if page.tags != "" %}
-          <span>[
-            {% for tag in page.tags %}
-              {{"Tags:"}}{% capture tag_name %}{{ tag }}{% endcapture %}
-              <a href="/simplicity/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
-            {% endfor %}
-          ]</span>
-        {% endif %}
-        
-
         <h1 itemprop="name headline">{{ page.title | remove: '<p>' | remove: '</p>' }}</h1>
       </header>
 
 
       <div class="main-content" itemprop="articleSection">
+
         {% if page.quote %}<blockquote style="margin: 0;">{{ page.quote }}</blockquote>{% endif %}
+
+        <!-- Tags -->
+        {% if page.tags != "" %}
+          <span>
+            {% for tag in page.tags %}
+              {{"Tags: "}}{% capture tag_name %}{{ tag }}{{" "}}{% endcapture %}
+              <a href="/simplicity/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+            {% endfor %}
+          </span>
+        {% endif %}
 
         {{ content }}
 
