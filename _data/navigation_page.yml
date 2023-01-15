@@ -1,9 +1,9 @@
 
 - name: "Info"
-  url: "/info/"
+  url: "/introduction/"
 
 - name: "About Me"
-  url: "/introduction/"
+  url: "/info/"
 
 - name: "All Articles"
   url: "/archive/"
