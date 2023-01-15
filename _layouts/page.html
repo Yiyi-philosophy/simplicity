@@ -34,7 +34,7 @@ format: page
         {% endif %}
 
         <!-- Tags -->
-        {% if site.tags != "" %}
+        {% if page.tags != "" %}
           <span>[
             {% for tag in page.tags %}
               {{"Tags:"}}{% capture tag_name %}{{ tag }}{% endcapture %}
