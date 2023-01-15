@@ -34,12 +34,15 @@ format: page
         {% endif %}
 
         <!-- Tags -->
-        <span>[
-          {% for tag in page.tags %}
-            {{"Tags:"}}{% capture tag_name %}{{ tag }}{% endcapture %}
-            <a href="/simplicity/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
-          {% endfor %}
-        ]</span>
+        {% if site.tags != "" %}
+          <span>[
+            {% for tag in page.tags %}
+              {{"Tags:"}}{% capture tag_name %}{{ tag }}{% endcapture %}
+              <a href="/simplicity/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+            {% endfor %}
+          ]</span>
+        {% endif %}
+        
 
         <h1 itemprop="name headline">{{ page.title | remove: '<p>' | remove: '</p>' }}</h1>
       </header>
