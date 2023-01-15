@@ -36,7 +36,7 @@ format: page
         {% endif %}
 
         <!-- Tags -->
-        <span>[
+        <span>[{{"home page"}}
           {% for tag in page.tags %}
             {% capture tag_name %}{{ tag }}{% endcapture %}
             <a href="/simplicity/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
