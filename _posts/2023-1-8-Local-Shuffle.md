@@ -1,6 +1,7 @@
 ---
 title: 'Why Globally Re-shuffle? Revisiting Data Shuffling in Large Scale Deep Learning'
 image: 'Summarize.assets/image-20230109133337630.png'
+tags: ML
 ---
 
 <!--more-->
