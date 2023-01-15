@@ -22,7 +22,11 @@
   {% include helper/_favicon.html %}
 
   {% unless page.style == NULL %}<style type="text/css">{{ page.style }}</style>{% endunless %}
-
+  
+  <!-- Tags -->
+  {% if site.tags != "" %}
+    {% include collecttags.html %}
+  {% endif %}
 </head>
 <body id="top-of-page" class="{{ page.format }}">
 
