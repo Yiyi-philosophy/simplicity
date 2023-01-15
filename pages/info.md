@@ -1,6 +1,6 @@
 ---
 layout: introduction
-title: 'Schedule'
+title: 'About Me'
 image: DYR.png
 header_image: 'BG/rogov-PBEjgpkWLAA-unsplash.jpg'
 permalink: /info/
