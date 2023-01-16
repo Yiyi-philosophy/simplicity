@@ -26,19 +26,24 @@ tags: RL Explore
 	- Distributing RL components in a composable way by adapting algorithms for top-down hierarchical control, thereby encapsulating **parallelism** and resource requirements within short-running compute tasks.
 	- These primitives enable a broad range of algorithms to be implemented with **high performance**, scalability, and **substantial code reuse**.
 
-- See more details in ...
+- See more details in [RLLIB](https://yiyi-philosophy.github.io/simplicity/RLlib/)
 
 
 
 
 # Distributed RL (Algorithm)
 
+Distributed Training
+> [https://github.com/PaddlePaddle/PARL/blob/develop/papers/archive.md#distributed-training](https://github.com/PaddlePaddle/PARL/blob/develop/papers/archive.md#distributed-training)
+
+Overview
+> [DISTRIBUTED DEEP REINFORCEMENT LEARNING](https://yiyi-philosophy.github.io/simplicity/Dstrb-RL/)
 
 # Muti-Agent RL
 
 #### MARLLIB: Extending Rllib For Multi-agent Reinforcement Learning
 
-> https://arxiv.org/abs/2210.13708
+> [https://arxiv.org/abs/2210.13708](https://arxiv.org/abs/2210.13708)
 
 - MARLlib manages to unify tens of algorithms, including different types of independent learning, centralized critic, and value decomposition methods; this leads to a highly composable integration of MARL algorithms that are not possible to unify before.    
 - Furthermore, MARLlib goes beyond current work by integrating diverse environment interfaces and providing flexible parameter sharing strategies;    this allows to create versatile solutions to cooperative, competitive, and mixed tasks with minimal code modifications for end users.    
