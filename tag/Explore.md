@@ -1,7 +1,7 @@
 ---
   layout: tagpage
-  title: 'Tag: RL(Reinforcement Learning)'
-  tag: RL
+  title: 'Tag: Explore'
+  tag: Explore
 ---
 
 <!--more-->

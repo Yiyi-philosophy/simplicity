@@ -1,7 +1,7 @@
 ---
   layout: tagpage
-  title: 'Tag: MLsys'
-  tag: MLsys
+  title: 'Tag: Note'
+  tag: Note_CS267
 ---
 
 <!--more-->

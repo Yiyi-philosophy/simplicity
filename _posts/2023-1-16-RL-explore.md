@@ -44,31 +44,38 @@ tags: RL Explore
 - Furthermore, MARLlib goes beyond current work by integrating diverse environment interfaces and providing flexible parameter sharing strategies;    this allows to create versatile solutions to cooperative, competitive, and mixed tasks with minimal code modifications for end users.    
 - A plethora of experiments are conducted to substantiate the correctness of our implementation, based on which we further derive new insights on the relationship between the performance and the design of algorithmic components.
 
-Exploration in Deep Reinforcement Learning: From Single-Agent to Multi-Agent Domain
+#### Exploration in Deep Reinforcement Learning: From Single-Agent to Multi-Agent Domain
 
-> https://arxiv.org/abs/2109.06668
+> [https://arxiv.org/abs/2109.06668](https://arxiv.org/abs/2109.06668)
 
-Distributed Deep Reinforcement Learning: A Survey and A Multi-Player Multi-Agent Learning Toolbox
+#### Distributed Deep Reinforcement Learning: A Survey and A Multi-Player Multi-Agent Learning Toolbox
 
-> https://arxiv.org/abs/2212.00253
+> [https://arxiv.org/abs/2212.00253](https://arxiv.org/abs/2212.00253)
 
+- In this paper, we conclude the state of this exciting field, by comparing the classical distributed deep reinforcement learning methods, and studying important components to achieve efficient distributed learning, covering single player single agent distributed deep reinforcement learning to the most complex multiple players multiple agents distributed deep reinforcement learning.   
+- Furthermore, we review recently released toolboxes that help to realize distributed deep reinforcement learning without many modifications of their non-distributed versions.   
+- By analyzing their strengths and weaknesses, a multi-player multi-agent distributed deep reinforcement learning toolbox is developed and released, which is further validated on Wargame, a complex environment, showing usability of the proposed toolbox for multiple players and multiple agents distributed deep reinforcement learning under complex games.  
 
 # RL for HPC
 
-DRAS-CQSim: A Reinforcement Learning based Framework for HPC Cluster Scheduling
+#### DRAS-CQSim: A Reinforcement Learning based Framework for HPC Cluster Scheduling
 
-> https://arxiv.org/abs/2105.07526
+> [https://arxiv.org/abs/2105.07526](https://arxiv.org/abs/2105.07526)
 
-Analyzing I/O Performance of a Hierarchical HPC Storage System for Distributed Deep Learning
+- However, the increasingly complex HPC systems combined with highly diverse workloads make such manual process challenging, time-consuming, and error-prone.  We present a reinforcement learning based HPC scheduling framework named DRAS-CQSim to automatically learn optimal scheduling policy.  
+- DRAS-CQSim encapsulates simulation environments, agents, hyperparameter tuning options, and different reinforcement learning algorithms, which allows the system administrators to quickly obtain customized scheduling policies.
 
-> https://arxiv.org/abs/2301.01494
 
-Review, Analysis and Design of a Comprehensive Deep Reinforcement Learning Framework
+#### Analyzing I/O Performance of a Hierarchical HPC Storage System for Distributed Deep Learning
 
-> https://arxiv.org/abs/2002.11883
+> [https://arxiv.org/abs/2301.01494](https://arxiv.org/abs/2301.01494)
+
+#### Review, Analysis and Design of a Comprehensive Deep Reinforcement Learning Framework
+
+> [https://arxiv.org/abs/2002.11883](https://arxiv.org/abs/2002.11883)
 
 # Other RL
-Reincarnating Reinforcement Learning: Reusing Prior Computation to Accelerate Progress
+#### Reincarnating Reinforcement Learning: Reusing Prior Computation to Accelerate Progress
 
-https://agarwl.github.io/reincarnating_rl/
+> [https://agarwl.github.io/reincarnating_rl/](https://agarwl.github.io/reincarnating_rl/)
 
