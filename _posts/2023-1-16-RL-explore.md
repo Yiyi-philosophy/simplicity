@@ -70,12 +70,25 @@ tags: RL Explore
 
 > [https://arxiv.org/abs/2301.01494](https://arxiv.org/abs/2301.01494)
 
+- In large-scale DDNN on HPC clusters, I/O performance is critical because it is becoming a bottleneck.   Most flagship-class HPC clusters have hierarchical storage systems. For designing future HPC storage systems, it is necessary to quantify the performance improvement effect of the hierarchical storage system on the workloads.   
+- This paper demonstrates the quantitative performance analysis of the hierarchical storage system for DDNN workload in a flagship-class supercomputer. Our analysis shows how much performance improvement and volume increment of the storage will be required to meet the performance goal.
+
+
 #### Review, Analysis and Design of a Comprehensive Deep Reinforcement Learning Framework
 
 > [https://arxiv.org/abs/2002.11883](https://arxiv.org/abs/2002.11883)
+
+- This paper proposes a comprehensive software framework that not only plays a vital role in designing a connect-the-dots deep RL architecture but also provides a guideline to develop a realistic RL application in a short time span.   We have designed and developed a deep RL-based software framework that strictly ensures flexibility, robustness, and scalability. By inheriting the proposed architecture, software managers can foresee any challenges when designing a deep RL-based system.   
+- As a result, they can expedite the design process and actively control every stage of software development, which is especially critical in agile development environments.   To enforce generalization, the proposed architecture does not depend on a specific RL algorithm, a network configuration, the number of agents, or the type of agents.   
+- Using our framework, software developers can develop and integrate new RL algorithms or new types of agents, and can flexibly change network configuration or the number of agents.
+
 
 # Other RL
 #### Reincarnating Reinforcement Learning: Reusing Prior Computation to Accelerate Progress
 
 > [https://agarwl.github.io/reincarnating_rl/](https://agarwl.github.io/reincarnating_rl/)
+> [https://arxiv.org/pdf/2206.01626.pdf](https://arxiv.org/pdf/2206.01626.pdf)
+> [https://ai.googleblog.com/2022/11/beyond-tabula-rasa-reincarnating.html](https://ai.googleblog.com/2022/11/beyond-tabula-rasa-reincarnating.html)
 
+- To address these issues, we present reincarnating RL as an alternative workflow or class of problem settings, where prior computational work (e.g., learned policies) is reused or transferred between design iterations of an RL agent, or from one RL agent to another.   As a step towards enabling reincarnating RL from any agent to any other agent, we focus on the specific setting of efficiently transferring an existing sub-optimal policy to a standalone value-based RL agent.  
+-  We find that existing approaches fail in this setting and propose a simple algorithm to address their limitations.   Equipped with this algorithm, we demonstrate reincarnating RL's gains over tabula rasa RL on Atari 2600 games, a challenging locomotion task, and the real-world problem of navigating stratospheric balloons.   Overall, this work argues for an alternative approach to RL research, which we believe could significantly improve real-world RL adoption and help democratize it further.   
