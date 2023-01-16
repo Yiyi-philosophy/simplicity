@@ -36,11 +36,13 @@ tags: RL Explore
 
 # Muti-Agent RL
 
-MARLLIB: Extending Rllib For Multi-agent Reinforcement Learning
+#### MARLLIB: Extending Rllib For Multi-agent Reinforcement Learning
 
 > https://arxiv.org/abs/2210.13708
 
-
+- MARLlib manages to unify tens of algorithms, including different types of independent learning, centralized critic, and value decomposition methods; this leads to a highly composable integration of MARL algorithms that are not possible to unify before.    
+- Furthermore, MARLlib goes beyond current work by integrating diverse environment interfaces and providing flexible parameter sharing strategies;    this allows to create versatile solutions to cooperative, competitive, and mixed tasks with minimal code modifications for end users.    
+- A plethora of experiments are conducted to substantiate the correctness of our implementation, based on which we further derive new insights on the relationship between the performance and the design of algorithmic components.
 
 Exploration in Deep Reinforcement Learning: From Single-Agent to Multi-Agent Domain
 
