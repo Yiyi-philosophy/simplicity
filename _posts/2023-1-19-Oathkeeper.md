@@ -156,3 +156,4 @@ tags: Distributed-Sys Safty
 ![image-20230119173007447](../images/2023-1-19-Oathkeeper/image-20230119173007447.png)
 
 ## 12 Conclusion
+ 
