@@ -65,7 +65,7 @@ excerpt_separator: <!--more-->   # Use <!--more--> in your posts to generate an 
 #  - yule
 
 #color_scheme: simplicity
-color_scheme: legacy
+color_scheme: yule
 
 
 #     ______                                         __
