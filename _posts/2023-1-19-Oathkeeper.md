@@ -36,7 +36,7 @@ tags: Distributed-Sys Safty
 
 ### 2.2 Eg
 
-<img src="../images/2023-1-17-Oathkeeper/image-20230118122404829.png" alt="image-20230118122404829" style="zoom: 80%;" />
+<img src="../images/2023-1-17-Oathkeeper/image-20230118122404829.png" alt="image-20230118122404829"  />
 
 - A Kafka consumer crashed but the associated znode was not deleted (Figure 1). As a result, when Kafka clients queried ZooKeeper to discover consumer information, they kept trying to connect to the crashed consumer.
 
@@ -91,10 +91,12 @@ tags: Distributed-Sys Safty
 - *Finding 9: Near two thirds(67%) of the studied cases violate some **long-lived semantics**. In 40% of the cases (27% of totall), the semantics are initially honored but are violated in the middle.**
 - **Implications: It is crucial to continuously monitor semantic guarantees, even after the initial semantic check passes.*
 
-- ![image-20230119131351915](../images/2023-1-19-Oathkeeper/image-20230119131351915.png)
+![image-20230119131351915](../images/2023-1-19-Oathkeeper/image-20230119131351915.png)
 
 - **Failure Triggering Conditions**: We further examine what triggers the semantic failures. Figure 7 shows the result.
-- ![image-20230119153939242](../images/2023-1-19-Oathkeeper/image-20230119153939242.png)
+
+![image-20230119153939242](../images/2023-1-19-Oathkeeper/image-20230119153939242.png)
+
 - *Finding 10: More than half of the studied failures are triggered by **specific requests**, while 39% of the failures require particular timing to trigger. Semantic failures often (41%) only manifest themselves under multiple types of conditions.*
 
 ## 8 Current Practice for Semantic Failures
@@ -122,10 +124,35 @@ tags: Distributed-Sys Safty
 - ***Insight and Key Idea.** the majority of the studied failures violate **old semantics** (Finding 5) despite the decent coverage of testing(Finding 10). When a semantic failure occurs, developers usually add **regression tests**. *
 - Based on this insight, Oathkeeper leverages the existing regression tests developers write for past semantic failures and automatically extracts the essence—the violated semantic rules. Oathkeeper then enforces these rules at runtime to detect future semantic violations, which may be caused by different bugs under different conditions.
 - Oathkeeper focuses on rules that describe relations among semantics-related events, particularly operation invocations and state updates. 
-- 
+
+### 9.2 Instrumentation and Trace Generation
+
+- the Oathkeeper traces use a uniform event schema that captures operation-related events and state-related events.
+- Oathkeeper designs a load-time instrumentation library that performs bytecode manipulation when a target system is loaded. 
+- To record state events, Oathkeeper takes a patch plus base approach.
+- It analyzes the given semantic failure patch and automatically includes the list of classes involved in the patch file.
+
+### 9.3 Template-Driven Inference
+
+- A key challenge in the semantic rule inference step of Oathkeeper is to integrate domain knowledge without requiring significant manual effort, while also having reasonable accuracy and efficiency. 
+
+### 9.6 Optimizations
+
+- To reduce the validation time, 
+
+	- we introduce a survivor optimization. After a test finishes, we validate the rules, if some rule is already “killed” (invalidated) by this test’s trace, it will not be carried over to the remaining tests.
+
+	- By prioritization, we can potentially invalidate false rules faster.
+
+- optimizations to reduce the runtime overhead
+	- the event tracer only preserves the most recent events within a time window
+	- to achieve both high concurrency and low memory pressure, we decouple the checking from the event emission with a ring buffer design inspired by highperformance message queues
+	- to avoid massive new object creation frequently triggering garbage collection, we reuse expired event objects in the ring buffers
 
 ## 10 Evaluation
 
-- 
+- We conduct an additional “cross-validation” experiment. Specifically, we collect a larger pool of 22 semantic failures in ZooKeeper.
+
+![image-20230119173007447](../images/2023-1-19-Oathkeeper/image-20230119173007447.png)
 
 ## 12 Conclusion
