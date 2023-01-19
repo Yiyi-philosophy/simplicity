@@ -96,23 +96,36 @@ tags: Distributed-Sys Safty
 - **Failure Triggering Conditions**: We further examine what triggers the semantic failures. Figure 7 shows the result.
 - ![image-20230119153939242](../images/2023-1-19-Oathkeeper/image-20230119153939242.png)
 - *Finding 10: More than half of the studied failures are triggered by **specific requests**, while 39% of the failures require particular timing to trigger. Semantic failures often (41%) only manifest themselves under multiple types of conditions.*
-- 
 
 ## 8 Current Practice for Semantic Failures
+
+### 8.1 Testing
 
 - why the studied failures are not exposed during testing?
 	- they lack some operations or arguments key to trigger the production failure
 - *Finding 11: Semantic violations occur not simply due to a lack of testing. The violated semantics are usually (73%) covered by some existing test. In more than half of the studied failures, similar triggering conditions exist in the test suite.*
 - *Implications: Coverage of semantics alone is insufficient. Developers should introduce variances in existing test cases. More fundamentally, developers should **write more general tests** for the semantic properties rather than specific examples.*
 
+### 8.2 Assertions
+
+- *Finding 12: Although in 51% of the failures the buggy functions have some sanity checks, few (9%) cases can be potentially **detected** by adding proper **sanity checks**.*
+- *Implications: Enabling assertions helps reduce silent semantic violations. However , developers should **add more semanticlevel invariant checks** besides sanity checks.*
+
 ## 9 Oathkeeper: A Semantic Violation Checker
 
+### 9.1 Design Overview and Workflow
 
+- Oathkeeper takes a runtime approach to check semantic violations in production
 
 ![image-20230119101225643](../images/2023-1-17-Oathkeeper/image-20230119101225643.png)
 
+- ***Insight and Key Idea.** the majority of the studied failures violate **old semantics** (Finding 5) despite the decent coverage of testing(Finding 10). When a semantic failure occurs, developers usually add **regression tests**. *
+- Based on this insight, Oathkeeper leverages the existing regression tests developers write for past semantic failures and automatically extracts the essence—the violated semantic rules. Oathkeeper then enforces these rules at runtime to detect future semantic violations, which may be caused by different bugs under different conditions.
+- Oathkeeper focuses on rules that describe relations among semantics-related events, particularly operation invocations and state updates. 
+- 
+
 ## 10 Evaluation
 
-
+- 
 
 ## 12 Conclusion
