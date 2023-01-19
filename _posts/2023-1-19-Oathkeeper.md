@@ -50,10 +50,10 @@ tags: Distributed-Sys Safty
 ## 4 Are Silent Semantic Failures Rare?
 
 - **Prevalence.**
-  - *Finding 1: Silent semantic failures have **significant** presence across all studied systems*
+    - > *Finding 1: Silent semantic failures have **significant** presence across all studied systems*
 - **Severity.**
-	- *Finding 2: Silent semantic failures are considered **severe** by developers and users. Moreover, the sampled semantic failures are assigned with **higher priorities** compared to all sampled failures.*
-	- *Finding 3: In addition to incorrectness (wrong responses), silent semantic violations often cause **severe consequences** including corrupt state, data or state loss, and security issues.*
+	- > *Finding 2: Silent semantic failures are considered **severe** by developers and users. Moreover, the sampled semantic failures are assigned with **higher priorities** compared to all sampled failures.*
+	- > *Finding 3: In addition to incorrectness (wrong responses), silent semantic violations often cause **severe consequences** including corrupt state, data or state loss, and security issues.*
 
 
 ![image-20230119104305003](../images/2023-1-19-Oathkeeper/image-20230119104305003.png)
@@ -62,8 +62,8 @@ tags: Distributed-Sys Safty
 
 ### 5.1 Sources of Violated Semantics
 
-- *Finding 4: Most (87%) studied failures violate semantics that are explicitly defined in API specs, system docs, or configs.*
-- *Implications: Developers should move from documenting semantics in informal text to rigorously **declare** **semantics** that are mechanically checkable and enforceable.*
+- > *Finding 4: Most (87%) studied failures violate semantics that are explicitly defined in API specs, system docs, or configs.*
+- > *Implications: Developers should move from documenting semantics in informal text to rigorously **declare** **semantics** that are mechanically checkable and enforceable.*
 
 ### 5.2 Categorizations of Violated Semantics
 
@@ -75,20 +75,20 @@ tags: Distributed-Sys Safty
 	- (3) latent bugs are exposed
 - **Local vs. Distributed Semantics**: we analyze whether the semantic violations naturally require **considering multiple distributed components**. This question is important to the **design of runtime verification techniques**.
 
-- *Finding 6: The violations in semantic failures can be usually (74%) determined in the scope of a **single component**.*
-- *Implications: Employing **local checkers** can potentially expose many semantic violations.*
-- *Finding 7: 86% of the studied cases violate safety semantics.*
+- > *Finding 6: The violations in semantic failures can be usually (74%) determined in the scope of a **single component**.*
+- > *Implications: Employing **local checkers** can potentially expose many semantic violations.*
+- > *Finding 7: 86% of the studied cases violate safety semantics.*
 
 ## 6 Why Do Silent Semantic Failures Occur?
 
 - We are interested in identifying potential common bug patterns in the root causes, which can inform the designs of bug finding tools to eliminate semantic failures before production.
 - The remaining failures are caused by system-specific logic bugs including design flaws, which are difficult to be caught by bug detection tools.
-- *Finding 8: Only 12% of the studied failures are caused by **well-defined bugs** such as race conditions, while most cases are caused by a wide variety of **logic bugs**. Even for failures violating the same semantics, the root causes are diverse.*
+- > *Finding 8: Only 12% of the studied failures are caused by **well-defined bugs** such as race conditions, while most cases are caused by a wide variety of **logic bugs**. Even for failures violating the same semantics, the root causes are diverse.*
 - Implications: It can be **challenging** to exploit code patterns to eliminate semantic violations through **static bug detection**.
 
 ## 7 How Are Semantic Failures Manifested?
 
-- *Finding 9: Near two thirds(67%) of the studied cases violate some **long-lived semantics**. In 40% of the cases (27% of totall), the semantics are initially honored but are violated in the middle.**
+- > *Finding 9: Near two thirds(67%) of the studied cases violate some **long-lived semantics**. In 40% of the cases (27% of totall), the semantics are initially honored but are violated in the middle.**
 - **Implications: It is crucial to continuously monitor semantic guarantees, even after the initial semantic check passes.*
 
 ![image-20230119131351915](../images/2023-1-19-Oathkeeper/image-20230119131351915.png)
@@ -97,7 +97,7 @@ tags: Distributed-Sys Safty
 
 ![image-20230119153939242](../images/2023-1-19-Oathkeeper/image-20230119153939242.png)
 
-- *Finding 10: More than half of the studied failures are triggered by **specific requests**, while 39% of the failures require particular timing to trigger. Semantic failures often (41%) only manifest themselves under multiple types of conditions.*
+- > *Finding 10: More than half of the studied failures are triggered by **specific requests**, while 39% of the failures require particular timing to trigger. Semantic failures often (41%) only manifest themselves under multiple types of conditions.*
 
 ## 8 Current Practice for Semantic Failures
 
@@ -105,12 +105,12 @@ tags: Distributed-Sys Safty
 
 - why the studied failures are not exposed during testing?
 	- they lack some operations or arguments key to trigger the production failure
-- *Finding 11: Semantic violations occur not simply due to a lack of testing. The violated semantics are usually (73%) covered by some existing test. In more than half of the studied failures, similar triggering conditions exist in the test suite.*
+- > *Finding 11: Semantic violations occur not simply due to a lack of testing. The violated semantics are usually (73%) covered by some existing test. In more than half of the studied failures, similar triggering conditions exist in the test suite.*
 - *Implications: Coverage of semantics alone is insufficient. Developers should introduce variances in existing test cases. More fundamentally, developers should **write more general tests** for the semantic properties rather than specific examples.*
 
 ### 8.2 Assertions
 
-- *Finding 12: Although in 51% of the failures the buggy functions have some sanity checks, few (9%) cases can be potentially **detected** by adding proper **sanity checks**.*
+- > *Finding 12: Although in 51% of the failures the buggy functions have some sanity checks, few (9%) cases can be potentially **detected** by adding proper **sanity checks**.*
 - *Implications: Enabling assertions helps reduce silent semantic violations. However , developers should **add more semanticlevel invariant checks** besides sanity checks.*
 
 ## 9 Oathkeeper: A Semantic Violation Checker
