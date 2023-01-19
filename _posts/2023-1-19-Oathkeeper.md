@@ -8,19 +8,21 @@ tags: Distributed-Sys Safty
 
 ## Abstract
 
-
+- Bugs can cause a system to silently violate its semantics without apparent anomalies.
+- The majority of the studied failures were violating semantics that existed since the system’s first stable release.
+- Oathkeeper, a tool that automatically infers semantic rules from past failures and enforces the rules at runtime to detect new failures.
 
 ## 1 Introduction
 
 - A vexing problem occurs when a system is operational
-	but silently breaks its semantics without apparent anomalies.
-- how prevalent are semantic violations in practice, what semantics are violated, why are these failures not caught in testing, and how are these silent violations detected.
+	but **silently** breaks its semantics without **apparent anomalies**.
+- How prevalent are semantic violations in practice, what semantics are violated, why are these failures not caught in testing, and how are these silent violations detected.
 - Find out
 	- silent semantic violations: 39% sampled failures 
 	- more than two thirds of the failures violate semantics that have existed since the system’s first stable release
-	- 74%) violations can be determined locally in some component.
+	- 74% violations can be determined locally in some component.
 	- The violated semantics are well covered by existing test cases
-	- Enabling assertions in release builds can  convert semantic violations into crash failures
+	- Enabling assertions in release builds can convert semantic violations into crash failures
 	- Many system semantics are vulnerable to violations during maintenance operations or node events.
 - Oathkeeper
 	- A major reason for the gap is that these regression tests are usually patch-driven: they only check if the specific bug is fixed in a particular setup using a bugtriggering workload.
@@ -156,4 +158,3 @@ tags: Distributed-Sys Safty
 ![image-20230119173007447](../images/2023-1-19-Oathkeeper/image-20230119173007447.png)
 
 ## 12 Conclusion
- 
