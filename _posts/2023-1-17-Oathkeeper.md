@@ -1,6 +1,6 @@
 ---
 title: 'Demystifying and Checking Silent Semantic Violations in Large Distributed Systems'
-image: ''
+image: '2023-1-17-Oathkeeper/image-20230119101225643.png'
 tags: Distributed-Sys Safty
 ---
 
@@ -29,14 +29,27 @@ tags: Distributed-Sys Safty
 
 ## 2 Background
 
-### Definition 
+### 2.1 Definition 
 
 - Silent semantic violations differ from other failure modes in observability.
 - distributed systems have a large number of interfaces (Table 1), many of which have loosely-defined (or hidden) semantics that cannot be easily checked. Consequently, violations of such semantics are difficult to detect and address.
 
+### 2.2 Eg
+
+<img src="../images/2023-1-17-Oathkeeper/image-20230118122404829.png" alt="image-20230118122404829" style="zoom: 80%;" />
+
+- A Kafka consumer crashed but the associated znode was not deleted (Figure 1). As a result, when Kafka clients queried ZooKeeper to discover consumer information, they kept trying to connect to the crashed consumer.
+
+
+
 ## 3 Study Methodology
 
-
+- We then read their descriptions and check whether the failures violate system semantics. We filter crashes, aborts, out-of-memory errors, and semantic failures with clear error signals.
+- Our sampling instead is done iteratively: for a particular system, if after an initial sampling, its number of Candidate cases is too small or 0, we sample more, until the candidate numbers for different systems are relatively balanced. 
+- Prevalence.
+	- *Finding 1: Silent semantic failures have significant presence*
+		*across all studied systems*
+- 
 
 
 
@@ -67,6 +80,8 @@ tags: Distributed-Sys Safty
 ## 9 Oathkeeper: A Semantic Violation Checker
 
 
+
+![image-20230119101225643](../images/2023-1-17-Oathkeeper/image-20230119101225643.png)
 
 ## 10 Evaluation
 
