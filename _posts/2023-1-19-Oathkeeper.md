@@ -14,8 +14,7 @@ tags: Distributed-Sys Safty
 
 ## 1 Introduction
 
-- A vexing problem occurs when a system is operational
-	but **silently** breaks its semantics without **apparent anomalies**.
+- A vexing problem occurs when a system is operational but **silently** breaks its semantics without **apparent anomalies**.
 - How prevalent are semantic violations in practice, what semantics are violated, why are these failures not caught in testing, and how are these silent violations detected.
 - Find out
 	- silent semantic violations: 39% sampled failures 
