@@ -83,7 +83,7 @@ Our main contributions are:
 
 # Evaluation
 
-
+C. Operators coverage
 
 # Use Cases
 
