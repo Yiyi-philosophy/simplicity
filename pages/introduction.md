@@ -12,11 +12,16 @@ A tough student who is searching a balance between many different characteristic
 # Online class
 ## Will do
 - MIT 6.824: Distributed Systems
+
 - CMU 15-445: Introduction to Database Systems
+
 - UCB CS162: Operation System
+
 - Stanford CS143: Compliers
 
+- [rCore](https://rcore-os.github.io/rCore-Tutorial-Book-v3/): Write a UniX-like kernel based on RISC-V architecture in Rust
 
+	
 
 ## Ongoing
 - UCB CS267: Applications of Parallel Computers (Ongoing 17/26) My note

@@ -15,7 +15,7 @@ When I am 18, I failed on National college entrance examination. And admitted in
 
 Though I'm sad about this, I still learn diligently, and in second year, I was admitted in the elite class of EE, and have opportunities to learn more about CS. At the same time, inspired by CMU15-213, I decided to doing some system work.
 
-Besides, in my spare time, I like to playing [GO](https://en.wikipedia.org/wiki/Go_(game))(board game). And
+Besides, in my spare time, I like to playing [GO](https://en.wikipedia.org/wiki/Go_(game))(board game). GO game teaches me a lot: And
 
 To know me more, you can visit [My Academic Blog](https://yiyi-philosophy.github.io/yiran.ding/).
 
