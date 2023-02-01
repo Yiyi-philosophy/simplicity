@@ -49,11 +49,13 @@ Our main contributions are:
 ### B. Advantages of EG
 
 - EG stands out among other similar recording approaches because: 
-	- \1) its API is easy to use and requires minimal source level changes 
-	- \2) its hardware agnostic design makes it portable across different hardware platforms, 
-	- \3) it incurs very small performance overheads, which facilitates a largescale automated data collection setup in the background, in a production environment, 
-	- \4) it has a compactly defined data schema which minimizes the storage support cost in production, and 
-	- \5) as each EG node is a self-contained entity, the EG format provides great composability which enable more use cases, such as new hardware platform evaluation and scaled-down performance emulation . 
+	
+	\1) its API is easy to use and requires minimal source level changes 
+	
+	\2) its hardware agnostic design makes it portable across different hardware platforms, 
+	\3) it incurs very small performance overheads, which facilitates a largescale automated data collection setup in the background, in a production environment, 
+	\4) it has a compactly defined data schema which minimizes the storage support cost in production, and 
+	\5) as each EG node is a self-contained entity, the EG format provides great composability which enable more use cases, such as new hardware platform evaluation and scaled-down performance emulation . 
 - ![image-20230120161235637](../images/2023-1-20-Mystique/image-20230120161235637.png)
 	- As the default compute backend of PyTorch, A Ten operators take up the lion share in terms of all three metrics. Fused operators are the second in count but have the shortest GPU time. Custom and communication operators are quantitatively modest, but have long GPU time; the former are usually complex in functionality and therefore expensive to execute, and the latter can also come at a significant cost in large-scale distributed deployments.
 

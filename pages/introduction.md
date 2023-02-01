@@ -16,10 +16,13 @@ A tough student who is searching a balance between many different characteristic
 - UCB CS162: Operation System
 - Stanford CS143: Compliers
 
+
+
 ## Ongoing
 - UCB CS267: Applications of Parallel Computers (Ongoing 17/26) My note
 - UCB AI-Sys: Machine Learning Systems (Ongoing 4/11)
 - MIT 6.s081: Operating System Engineering
+- SIGOPS: The Hall of Fame Award (2005-2022)
 
 ## Done
 - CMU 15-213: Intro to Computer Systems (CSAPP),
