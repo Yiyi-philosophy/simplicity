@@ -9,25 +9,13 @@ permalink: /info/
 
 Here is me!
 
-I have faced many frustrations after being adult, and I have not been overthrown. 
+I have experience many frustrations after being adult, and I have not been overthrown. 
 
-18year: College enter test ->low score
+When I am 18, I failed on National college entrance examination. And admitted in a second class college and major in math. After first semester studying, I found myself was more interested in CS, so I decided to transfer to CS. However, this transfer failed and I was admitted by EE.
 
-be in a second class college and major in math;
+Though I'm sad about this, I still learn diligently, and in second year, I was admitted in the elite class of EE, and have opportunities to learn more about CS. At the same time, inspired by CMU15-213, I decided to doing some system work.
 
-In studying,I find myself was more interested in CS, I decided to transfer to CS.
-
-
-
-19years: Transfer failed. I was admitted by EE.
-
-Though I'm sad about this., I still learn diligent ly, and be in elite class of EE, and have opportunities to learn more about CS.
-
-
-
-20year: Inspired by CMU15-213, I decided to doing some system work,
-
-
+Besides, in my spare time, I like to playing [GO](https://en.wikipedia.org/wiki/Go_(game))(board game). And
 
 To know me more, you can visit [My Academic Blog](https://yiyi-philosophy.github.io/yiran.ding/).
 
