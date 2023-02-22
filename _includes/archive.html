@@ -5,10 +5,6 @@
     {% endfor %}
 {% endcapture %}
 
-<h1>Some Catalogue</h1>
-{% capture tagname %}{{ "UCB: AIsys Catalogue" }}{% endcapture %}
-    <a href="/simplicity/AIsys-index}"><code class="highligher-rouge"><nobr>{{ tagname }}</nobr></code></a>
-
 {% assign sortedtemptags = temptags | split:' ' | sort | reverse %}
 {% for temptag in sortedtemptags %}
     {% assign tagitems = temptag | split: '#' %}
@@ -16,3 +12,9 @@
         <a href="/simplicity/tag/{{ tagname }}"><code class="highligher-rouge"><nobr>{{ tagname }}</nobr></code></a>
 {% endfor %}
 
+<h1>Some Catalogue</h1>
+{% capture tagname %}{{ "UCB: AIsys Catalogue" }}{% endcapture %}
+    <a href="/simplicity/AIsys-index}"><code class="highligher-rouge"><nobr>{{ tagname }}</nobr></code></a>
+
+{% capture tagname %}{{ "SIGOPS: The Hall of Fame Award" }}{% endcapture %}
+    <a href="/simplicity/SIGOPS-index}"><code class="highligher-rouge"><nobr>{{ tagname }}</nobr></code></a>
