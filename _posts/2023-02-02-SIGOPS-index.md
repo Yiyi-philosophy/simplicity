@@ -1,6 +1,6 @@
 ---
 title: 'SIGOPS: The Hall of Fame Award'
-image: '2023-02-02-SIGOPS-index/1677073715956.png'
+image: '2023-02-02-SIGOPS-index/1677122390041.png'
 tags: System
 ---
 The SIGOPS Hall of Fame Award was instituted in 2005 to recognize the most influential Operating Systems papers that were published at least ten years in the past. Starting in 2016, SIGOPS will select 1-2 papers annually, restricted to papers that appeared, in any form of publication, 10-11 years previously—specifically, between 1 October in year (X-11) and 30 September in year (X-9), where X is the selection year. On rare occasions, the committee may additionally select a paper of exceptional impact older than 11 years.
@@ -122,12 +122,15 @@ The award winners will be announced at the SOSP or OSDI conference by the curren
 
 # 2005
 
-- ✅ Edsger W. Dijkstra, **The Structure of the THE Multiprogramming System**, Proceedings of the First ACM Symposium on Operating Systems Principles, October 1967, Gatlinburg, TN, USA.
-  - The first paper to suggest that an operating system be built in a **structured** way. That structure was a series of layers, each a virtual machine that introduced abstractions built using the functionality of lower layer. The paper stimulated a great deal of subsequent work in building operating systems as structured systems.
+- ✅ Edsger W. Dijkstra, [**The Structure of the THE Multiprogramming System**](https://yiyi-philosophy.github.io/simplicity/SIGOPS-2005-1/), Proceedings of the First ACM Symposium on Operating Systems Principles, October 1967, Gatlinburg, TN, USA.
 
+  - The first paper to suggest that an operating system be built in a **structured** way. That structure was a series of layers, each a virtual machine that introduced abstractions built using the functionality of lower layer. The paper stimulated a great deal of subsequent work in building operating systems as structured systems.
 - 🔲 Peter J. Denning, **The Working Set Model for Program Behavior**, Proceedings of the First ACM Symposium on Operating Systems Principles, October 1967, Gatlinburg, TN, USA.
+
   - This paper introduced the working set model, which has became a key concept in understanding of locality of memory references and for implementing virtual memory. Most paging algorithms can trace their roots back to this work.
 - 🔲 Dennis M. Ritchie and Ken Thompson, **The UNIX Time-Sharing System**, Proceedings of the Fourth ACM Symposium on Operating Systems Principles, October 1973, Yorktown Heights, NY, USA.
+
   - At a time when operating systems were trending towards complexity, UNIX emerged as a hallmark of elegance and simplicity.
 - 🔲 Butler Lampson, **Hints for Computer System Design**, Proceedings of the Ninth ACM Symposium on Operating Systems Principles, pp. 33-48, October 1983, Bretton Woods, NH, USA.
+
   - A classic study of experience building large systems, distilled into a cookbook of wisdom for the operating systems researcher. As time has passed, the value of these hints has only grown and the range of systems to which they apply enlarged.
