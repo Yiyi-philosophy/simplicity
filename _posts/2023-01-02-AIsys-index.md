@@ -1,9 +1,8 @@
 ---
 title           : 'UCB: AIsys Catalogue'
 image           : '2023-01-02-AIsys-index/1677075722704.png'
-
+tags		: MLsys
 ---
-
 <!--more-->
 
 > [https://ucbrise.github.io/cs294-ai-sys-sp22/](https://ucbrise.github.io/cs294-ai-sys-sp22/)
@@ -19,7 +18,7 @@ In this course, we will describe the latest trends in systems designs to better 
 ## 1. Introduction and Course Overview
 
 ### Require Reading
- 
+
 ✅ [SysML: The New Frontier of Machine Learning Systems](https://arxiv.org/abs/1904.03257)
  Read Chapter 1 of [*Principles of Computer System Design*](https://www.sciencedirect.com/book/9780123749574/principles-of-computer-system-design). You will need to be on campus or use the Library VPN to obtain a free PDF.
 ✅ [A Few Useful Things to Know About Machine Learning](https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)
@@ -42,7 +41,6 @@ In this course, we will describe the latest trends in systems designs to better 
 ✅ [Delta Lake: High-Performance ACID Table Storage over Cloud Object Stores](https://databricks.com/wp-content/uploads/2020/08/p975-armbrust.pdf)
 ✅ [Spark SQL: Relational Data Processing in Spark](https://people.csail.mit.edu/matei/papers/2015/sigmod_spark_sql.pdf)
 🔲 [The MADlib Analytics Library or MAD Skills, the SQL](https://arxiv.org/pdf/1208.4165.pdf)
-
 
 ## 3. Hardware for Machine Learning
 
@@ -102,6 +100,7 @@ In this course, we will describe the latest trends in systems designs to better 
 
 🔲 [Automatic differentiation in ML: Where we are and where we should be going](https://papers.nips.cc/paper/8092-automatic-differentiation-in-ml-where-we-are-and-where-we-should-be-going)
 🔲 [TensorFlow: A System for Large-Scale Machine Learning](https://www.usenix.org/system/files/conference/osdi16/osdi16-abadi.pdf)
+
 - [TVM: An Automated End-to-End Optimizing Compiler for Deep Learning](https://arxiv.org/abs/1802.04799)
 
 ## 8. Efficient Machine Learning
@@ -129,7 +128,6 @@ In this course, we will describe the latest trends in systems designs to better 
 ### Additional Optional Reading
 
 🔲 [RubberBand: cloud-based hyperparameter tuning](https://dl.acm.org/doi/10.1145/3447786.3456245)
-
 
 ## 10. Benchmarking Machine Learning Workloads
 
