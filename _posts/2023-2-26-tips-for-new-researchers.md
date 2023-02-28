@@ -1,14 +1,12 @@
 ---
 title: 'Tips for Success as a New Researcher'
-tags: Mmethodology 
+tags: Methodology
 ---
 This guide is a compilation of tips I wish I knew when I was starting out doing computer science research as an undergraduate student at Stanford.
 
 <!--more-->
 
 > Reprinted from [https://www.alextamkin.com/essays/tips-for-new-researchers](https://www.alextamkin.com/essays/tips-for-new-researchers) by [Alex Tamkin](https://www.alextamkin.com/home)
-
-
 
 This guide is a compilation of tips I wish I knew when I was starting out doing computer science research as an undergraduate student at Stanford.
 
