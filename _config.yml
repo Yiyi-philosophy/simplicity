@@ -25,7 +25,7 @@
 
 
 # Title and description of your site
-title         : "Yiran Ding's Blog"
+title         : "Yiran's Blog"
 description   : "A man can be destroyed but not defeated."
 slogan        : 'A will find a way.'
 
@@ -130,7 +130,7 @@ defaults:
       layout: page      # Set default layout to page
       show_meta: true   # Show metadata for all posts
       comments: false
-      author: 'Yiran Ding'     # Default author for posts
+      author: 'Yiran'     # Default author for posts
 
 
 
