@@ -100,3 +100,6 @@ https://arxiv.org/abs/1910.03771
 > 4. Network compression techniques, such as pruning, quantization, distillation. A model of smaller size, in terms of parameter count or bitwidth, should demand less memory and run faster. （批注： 一般牺牲精度或者需要微调，在小模型时代端侧推理常用的方法，现在在大模型时代，这种类似优化技巧在云端也更加重视）
 > 5. Improvement specific to a target model architecture. Many architectural changes, especially those for attention layers, help with transformer decoding speed. （批注： Large Transformer Model Inference Optimization 重点总结了模型结构方面的优化设计，例如，围绕Transformer模型结构进行计算优化，降低理论计算量，不是计算机系统方面的优化设计了）
 
+
+
+
