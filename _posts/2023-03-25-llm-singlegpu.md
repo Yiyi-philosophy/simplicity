@@ -36,17 +36,17 @@ tags: Explore LLM
 
 ### Background Knowledge
 
-[GPT，GPT-2，GPT-3 论文精读[论文精读]] https://www.bilibili.com/video/BV1AF411b7xQ/
+[GPT，GPT-2，GPT-3 论文精读[论文精读]](https://www.bilibili.com/video/BV1AF411b7xQ/)
 
-[Transformer论文逐段精读[论文精读]] https://www.bilibili.com/video/BV1pu411o7BE/
+[Transformer论文逐段精读[论文精读]](https://www.bilibili.com/video/BV1pu411o7BE/)
 
-[Megatron LM 论文精读[论文精读]] https://www.bilibili.com/video/BV1nB4y1R7Yz/
+[Megatron LM 论文精读[论文精读]](https://www.bilibili.com/video/BV1nB4y1R7Yz/)
 
-[Zero 论文精读[论文精读]] https://www.bilibili.com/video/BV1tY411g7ZT/
+[Zero 论文精读[论文精读]](https://www.bilibili.com/video/BV1tY411g7ZT/)
 
-[InstructGPT 论文精读[论文精读·48]] https://www.bilibili.com/video/BV1hd4y187CR/
+[InstructGPT 论文精读[论文精读·48]](https://www.bilibili.com/video/BV1hd4y187CR/)
 
-[Anthropic LLM 论文精读[论文精读·51]] https://www.bilibili.com/video/BV1XY411B7nM/
+[Anthropic LLM 论文精读[论文精读·51]](https://www.bilibili.com/video/BV1XY411B7nM/)
 
 # **Article**
 
