@@ -3,9 +3,7 @@ title: 'Read List of LLM'
 image: '2023-03-25-llm-singlegpu/1679629332417.gif'
 tags: Explore LLM
 ---
-
 <!--more-->
-
 
 # Sourse
 
@@ -17,12 +15,13 @@ tags: Explore LLM
 
 ### Flexgen
 
+[单卡高吞吐的大语言模型推理 - 嘻嘻嘻的文章 - 知乎](https://zhuanlan.zhihu.com/p/608279479)
+
 [Flexgen LLM推理 CPU Offload计算架构到底干了什么事情？ - 王燕飞的文章 - 知乎](https://zhuanlan.zhihu.com/p/615021309)
 
 [Flexgen LLM推理计算环节的量化分析 - 王燕飞的文章 - 知乎](https://zhuanlan.zhihu.com/p/615327112)
 
 [Flexgen LLM推理相关工作 - 怎么思考寻找优化方法 - 王燕飞的文章 - 知乎](https://zhuanlan.zhihu.com/p/615328081)
-
 
 ## Muli
 
@@ -69,11 +68,9 @@ https://arxiv.org/pdf/2207.00032.pdf
 https://www.usenix.org/conference/osdi22/presentation/yu
 https://www.usenix.org/system/files/osdi22-yu.pdf
 
-
 **FasterTransformer**
 [英伟达Fastertransformer源码解读](https://zhuanlan.zhihu.com/p/79528308)
 https://github.com/NVIDIA/FasterTransformer
-
 
 **LightSeq**
 https://arxiv.org/abs/2010.13887
@@ -81,10 +78,8 @@ https://arxiv.org/abs/2010.13887
 **TurboTransformers**
 https://arxiv.org/abs/2010.05680
 
-
 **Huggingface**
 https://arxiv.org/abs/1910.03771
-
 
 > 一类工作是量化（quantization）和稀疏化（sparsification）工作
 
@@ -92,14 +87,10 @@ https://arxiv.org/abs/1910.03771
 
 [OpenAI 工程师 lilianweng 关于LLM推理计算优化的方法概述](https://lilianweng.github.io/posts/2023-01-10-inference-optimization/)
 
-
 > Several methods can be used to make inference cheaper in memory or/and faster in time.
+>
 > 1. Apply various parallelism to scale up the model across a large number of GPUs. Smart parallelism of model components and data makes it possible to run a model of trillions of parameters. （批注： 例如，Deepspeed inference对dense和MoE 稀疏模型的并行策略，提高并行度，降低计算延迟）
 > 2. Memory offloading to offload temporarily unused data to the CPU and read them back when needed later. This helps with memory usage but causes higher latency. （批注： 例如，flexgen和Deepspeed inference都有对CPU offload的设计，其中flexgen更是将这种设计推向新高度，核心追求throughout性能，适合离线场景）
 > 3. Smart batching strategy; E.g. EffectiveTransformer packs consecutive sequences together to remove padding within one batch.
 > 4. Network compression techniques, such as pruning, quantization, distillation. A model of smaller size, in terms of parameter count or bitwidth, should demand less memory and run faster. （批注： 一般牺牲精度或者需要微调，在小模型时代端侧推理常用的方法，现在在大模型时代，这种类似优化技巧在云端也更加重视）
 > 5. Improvement specific to a target model architecture. Many architectural changes, especially those for attention layers, help with transformer decoding speed. （批注： Large Transformer Model Inference Optimization 重点总结了模型结构方面的优化设计，例如，围绕Transformer模型结构进行计算优化，降低理论计算量，不是计算机系统方面的优化设计了）
-
-
-
-
