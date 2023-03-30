@@ -119,14 +119,26 @@ of Transformer Models at Unprecedented Scale
 ## **LightSeq**
 - 🔲[https://arxiv.org/abs/2010.13887](https://arxiv.org/abs/2010.13887)
 - [简单读读LightSeq - 我不是zzk的文章 - 知乎](https://zhuanlan.zhihu.com/p/398753306)
-> 我们将Tensorflow/Pytorch实现中的一些细粒度Kernel，进一步融合实现成一个粗粒度的Kernel，从而避免大量核函数启动和GPU memory IO带来的时间成本我们设计了一种hierarchical（层级） auto regressive search来替代auto regressive search，进一步加速我们提出了一种动态显存复用策略，在NLP处理中，我们经常会遇到变长数据，给内存分配带来了困难。LightSeq预先定义了每个kernel最大可使用显存，并给不存在依赖关系的kernel进行共享，能够减少8倍内存分配。
+> 类似LightSeq的高性能加速库也有很多，下面的三个主要特性是我们比别的加速库表现好的原因：
+> - 我们将Tensorflow/Pytorch实现中的一些细粒度Kernel，进一步融合实现成一个粗粒度的Kernel，从而避免大量核函数启动和GPU memory IO带来的时间成本
+> 我们设计了一种hierarchical（层级） auto regressive search来替代auto regressive search，进一步加速
+> 我们提出了一种动态显存复用策略，在NLP处理中，我们经常会遇到变长数据，给内存分配带来了困难。LightSeq预先定义了每个kernel最大可使用显存，并给不存在依赖关系的kernel进行共享，能够减少8倍内存分配。
 
 
 ## **TurboTransformers**
 - 🔲[https://arxiv.org/abs/2010.05680](https://arxiv.org/abs/2010.05680)
+- [微信也在用的Transformer加速推理工具，现在腾讯开源了 - 量子位的文章 - 知乎](https://zhuanlan.zhihu.com/p/136194893)
+> 算子层优化
+> Transformer都包含了什么计算呢？
+> 如下图所示，图(a)展示了论文Transformer结构示意图，这里称灰色方框内的结构为一个Transformer Cell，BERT encoder堆叠了Nx个这样的Transformer Cell。图(b)将一个Cell的细节加以展开，每一个矩形都是一个独立的计算核心。
+> ![1680185800053](../images/2023-03-25-llm-singlegpu/1680185800053.png)
+> Transformer Cell计算包含了8个GEMM(通用矩阵乘法，General Matrix Multiplication)运算。通过调优Intel MKL和cuBLAS的GEMM调用方式来获得最佳GEMM性能。并且在硬件允许条件下，在GPU上使用tensor core方式进行GEMM运算。
+> 类似NVIDIA FasterTransformers方案，将所有GEMM运算之间的计算融合成一个调用核心。融合会带来两个好处，一是减少了内存访问开销，二是减少多线程启动开销。对于这些核心，在CPU上采用openmp进行并行，在GPU上使用CUDA进行优化实现。对于比较复杂的LayerNorm和Softmax算子，它们包含了不适合GPU上并行的规约操作，TurboTransformers为它们设计了创新并行算法，极大降低了这些算子的延迟。理论上Transformers推理延迟应该近似于矩阵乘法延迟。
 
 ## **Huggingface**
 - 🔲[https://arxiv.org/abs/1910.03771](https://arxiv.org/abs/1910.03771)
+
+
 
 ---
 
