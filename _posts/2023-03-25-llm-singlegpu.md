@@ -13,6 +13,10 @@ tags: Explore LLM
 > ![1680183311897](../images/2023-03-25-llm-singlegpu/1680183311897.png)
 > ![1680183328626](../images/2023-03-25-llm-singlegpu/1680183328626.png)
 
+- ✅[A Summary Thread on Attention in Transformers](https://mem.ai/p/yYEcOhYFjmjq32CtzEPX)
+
+- ✅[How to Estimate the Number of Parameters in Transformer models](https://towardsdatascience.com/how-to-estimate-the-number-of-parameters-in-transformer-models-ca0f57d8dff0)
+
 - 🔲[OpenAI 工程师 lilianweng 关于LLM推理计算优化的方法概述](https://lilianweng.github.io/posts/2023-01-10-inference-optimization/)
 
 ## [王燕飞](https://www.zhihu.com/people/nono-nono-66/posts)
