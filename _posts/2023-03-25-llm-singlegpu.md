@@ -49,9 +49,11 @@ tags: Explore LLM
 
 ### Background Knowledge
 
-- ✅[GPT，GPT-2，GPT-3 论文精读- [论文精读]](https://www.bilibili.com/video/BV1AF411b7xQ/)
-
 - ✅[Transformer论文逐段精读- [论文精读]](https://www.bilibili.com/video/BV1pu411o7BE/)
+
+- 🔲[BERT 论文逐段精读【论文精读】](https://www.bilibili.com/video/BV1PL411M7eQ/)
+
+- ✅[GPT，GPT-2，GPT-3 论文精读- [论文精读]](https://www.bilibili.com/video/BV1AF411b7xQ/)
 
 - 🔲[Megatron LM 论文精读- [论文精读]](https://www.bilibili.com/video/BV1nB4y1R7Yz/)
 
@@ -59,7 +61,7 @@ tags: Explore LLM
 
 - 🔲[InstructGPT 论文精读[论文精读·48]](https://www.bilibili.com/video/BV1hd4y187CR/)
 
-- 🔲[HELM 全面语言模型评测[论文精读·50]](https://www.bilibili.com/video/BV1z24y1B7uX/?share_source=copy_web&vd_source=3d7484df4d1e9f698fc8dd9d979e07fc)
+- 🔲[HELM 全面语言模型评测[论文精读·50]](https://www.bilibili.com/video/BV1z24y1B7uX/)
 
 - 🔲[Anthropic LLM 论文精读[论文精读·51]](https://www.bilibili.com/video/BV1XY411B7nM/)
 
