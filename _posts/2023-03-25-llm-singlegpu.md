@@ -6,7 +6,7 @@ tags: Explore LLM
 <!--more-->
 
 # Sourse
-> Notice, ✅ means I have read this material, 🔲 means I have not. The importance of each link is listed from start to the end.
+> Please note that a ✅ symbol indicates that I have read the material, while a 🔲 symbol indicates that I have not. The importance of each link is listed in order from the beginning to the end
 
 ## Must Read
 
@@ -14,7 +14,9 @@ tags: Explore LLM
 
 - ✅[A Summary Thread on Attention in Transformers](https://mem.ai/p/yYEcOhYFjmjq32CtzEPX)
 - ✅[How to Estimate the Number of Parameters in Transformer models](https://towardsdatascience.com/how-to-estimate-the-number-of-parameters-in-transformer-models-ca0f57d8dff0)
+
 - 🔲[OpenAI 工程师 lilianweng 关于LLM推理计算优化的方法概述](https://lilianweng.github.io/posts/2023-01-10-inference-optimization/)
+
 - 🔲[From zero to ChatGPT](https://xv44586.github.io/2023/01/09/zero-to-chatgpt/index.html)
 - ✅[LLM Inference串讲](https://xv44586.github.io/2023/03/10/llm-inf/)
 > Why need KV cache? 
