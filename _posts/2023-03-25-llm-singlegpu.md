@@ -6,22 +6,23 @@ tags: Explore LLM
 <!--more-->
 
 # Sourse
+
 > Please note that a ✅ symbol indicates that I have read the material, while a 🔲 symbol indicates that I have not. The importance of each link is listed in order from the beginning to the end
 
 ## Must Read
 
 - ✅[AI算力的阿喀琉斯之踵：内存墙 - OneFlow的文章 - 知乎](https://zhuanlan.zhihu.com/p/363041668)
-
 - ✅[A Summary Thread on Attention in Transformers](https://mem.ai/p/yYEcOhYFjmjq32CtzEPX)
 - ✅[How to Estimate the Number of Parameters in Transformer models](https://towardsdatascience.com/how-to-estimate-the-number-of-parameters-in-transformer-models-ca0f57d8dff0)
-
 - 🔲[OpenAI 工程师 lilianweng 关于LLM推理计算优化的方法概述](https://lilianweng.github.io/posts/2023-01-10-inference-optimization/)
-
+- [🔲How to Train Really Large Models on Many GPUs? | Lil&#39;Log (lilianweng.github.io)](https://lilianweng.github.io/posts/2021-09-25-train-large/)
 - 🔲[From zero to ChatGPT](https://xv44586.github.io/2023/01/09/zero-to-chatgpt/index.html)
 - ✅[LLM Inference串讲](https://xv44586.github.io/2023/03/10/llm-inf/)
-> Why need KV cache? 
+
+> Why need KV cache?
 
 ## Our Main Work
+
 ### ✅[Flexgen](https://arxiv.org/pdf/2303.06865.pdf)
 
 ## [王燕飞](https://www.zhihu.com/people/nono-nono-66/posts)
@@ -174,15 +175,19 @@ tags: Explore LLM
 ## [RPTQ: Reorder-based Post-training Quantization for Large Language Models](https://arxiv.org/abs/2304.01089)
 
 [基于重排序的新量化方法RPTQ：实现大型语言模型的 3 比特量化](https://mp.weixin.qq.com/s/JIaG30fcTSi1rTmERXk9ug)
+
 > Challenge
+>
 > - 1）一些通道具有显著的异常值，其最大或最小值比其他通道大几百倍。以前的研究也已经发现了这个问题并针对异常值提出了特殊处理。
 > - 2）不同的通道在数值范围上有显著差异。使用相同的量化参数来量化不同的通道可能会导致显著的量化误差。即使两个通道具有相同的异常值绝对值，它们在数值范围上也可能存在很大的变化。
 > - 将整个张量使用相同的量化参数进行量化的每张量量化技术可能不太有效。原因是将量化范围设置为覆盖大范围的数值范围可能导致数值较小的通道产生较大的量化误差，而将其设置为覆盖小范围的数值范围可能导致对异常值的显著截断，并导致显著的量化误差。
 
 ![1681129759636](../images/2023-03-25-llm-singlegpu/1681129759636.png)
+
 > 如图 2 所示，该方法将数值范围相似的通道聚类在一起，然后对每个聚类中的值使用相同的量化参数进行量化。为了实施基于重排序的量化方法，作者首先使用校准数据集作为推理输入，从中导出每个激活通道的最大值和最小值。
 
 ![1681129854905](../images/2023-03-25-llm-singlegpu/1681129854905.png)
+
 > 显式重排是一种运行时重新排列激活中通道的操作，需要将不同通道的数据从一个内存位置物理移动到另一个位置，因此对于具有大量通道的大型模型，重排过程可能非常耗时。**此外，存储源和目标激活张量会增加内存开销。**因此，作者提出了避免显式重新排序的策略，从而降低了计算开销，提高了推理效率。
 > 如图 3 所示，作者重新排序线性层的权重，使它们能够直接按照排序顺序产生激活。此外，作者修改了 LayerNorm 的方法，使其能够直接产生重新排序的激活，从而省去了在推理过程中进行显式通道调整。
 
@@ -197,3 +202,9 @@ tags: Explore LLM
 > 3. Smart batching strategy; E.g. EffectiveTransformer packs consecutive sequences together to remove padding within one batch.
 > 4. Network compression techniques, such as pruning, quantization, distillation. A model of smaller size, in terms of parameter count or bitwidth, should demand less memory and run faster. （批注： 一般牺牲精度或者需要微调，在小模型时代端侧推理常用的方法，现在在大模型时代，这种类似优化技巧在云端也更加重视）
 > 5. Improvement specific to a target model architecture. Many architectural changes, especially those for attention layers, help with transformer decoding speed. （批注： Large Transformer Model Inference Optimization 重点总结了模型结构方面的优化设计，例如，围绕Transformer模型结构进行计算优化，降低理论计算量，不是计算机系统方面的优化设计了）
+
+
+---
+Others
+> [https://arxiv.org/pdf/2201.12023.pdf](https://arxiv.org/pdf/2201.12023.pdf)
+> [[阅读笔记] Alpa/Parax @OSDI 2022 - 郑思泽的文章 - 知乎](https://zhuanlan.zhihu.com/p/521211578)
