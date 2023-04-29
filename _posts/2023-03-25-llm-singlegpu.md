@@ -18,8 +18,10 @@ tags: Explore LLM
 - [🔲How to Train Really Large Models on Many GPUs? | Lil&#39;Log (lilianweng.github.io)](https://lilianweng.github.io/posts/2021-09-25-train-large/)
 - 🔲[From zero to ChatGPT](https://xv44586.github.io/2023/01/09/zero-to-chatgpt/index.html)
 - ✅[LLM Inference串讲](https://xv44586.github.io/2023/03/10/llm-inf/)
-
 > Why need KV cache?
+- [从零开始了解Transformer](https://e2eml.school/transformers.html)
+
+
 
 ## Our Main Work
 
