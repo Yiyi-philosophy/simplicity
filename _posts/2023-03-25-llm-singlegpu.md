@@ -14,9 +14,9 @@ tags: Explore LLM
 - ✅[AI算力的阿喀琉斯之踵：内存墙 - OneFlow的文章 - 知乎](https://zhuanlan.zhihu.com/p/363041668)
 - ✅[A Summary Thread on Attention in Transformers](https://mem.ai/p/yYEcOhYFjmjq32CtzEPX)
 - ✅[How to Estimate the Number of Parameters in Transformer models](https://towardsdatascience.com/how-to-estimate-the-number-of-parameters-in-transformer-models-ca0f57d8dff0)
-- 🔲[OpenAI 工程师 lilianweng 关于LLM推理计算优化的方法概述](https://lilianweng.github.io/posts/2023-01-10-inference-optimization/)
-- [🔲How to Train Really Large Models on Many GPUs? | Lil&#39;Log (lilianweng.github.io)](https://lilianweng.github.io/posts/2021-09-25-train-large/)
-- 🔲[From zero to ChatGPT](https://xv44586.github.io/2023/01/09/zero-to-chatgpt/index.html)
+- ✅[OpenAI 工程师 lilianweng 关于LLM推理计算优化的方法概述](https://lilianweng.github.io/posts/2023-01-10-inference-optimization/)
+- ✅[How to Train Really Large Models on Many GPUs? | Lil&#39;Log (lilianweng.github.io)](https://lilianweng.github.io/posts/2021-09-25-train-large/)
+- ✅[From zero to ChatGPT](https://xv44586.github.io/2023/01/09/zero-to-chatgpt/index.html)
 - ✅[LLM Inference串讲](https://xv44586.github.io/2023/03/10/llm-inf/)
 > Why need KV cache?
 - [从零开始了解Transformer](https://e2eml.school/transformers.html)
@@ -45,8 +45,8 @@ tags: Explore LLM
 ### Methods
 
 - ✅[**如何读论文**：](https://www.bilibili.com/video/BV1H44y1t75x/)
-- 🔲[如何判断（你自己的）研究工作的价值- [论文精读]](https://www.bilibili.com/video/BV1oL411c7Us/)
-- 🔲[你（被）吐槽过论文不够 novel 吗？- [论文精读]](https://www.bilibili.com/video/BV1ea41127Bq/)
+- ✅[如何判断（你自己的）研究工作的价值- [论文精读]](https://www.bilibili.com/video/BV1oL411c7Us/)
+- ✅[你（被）吐槽过论文不够 novel 吗？- [论文精读]](https://www.bilibili.com/video/BV1ea41127Bq/)
 
 ### Background Knowledge
 
@@ -57,10 +57,10 @@ tags: Explore LLM
 - ✅[GPipe论文精读【论文精读】](https://www.bilibili.com/video/BV1v34y1E7zu/)
 - ✅[Megatron LM 论文精读- [论文精读]](https://www.bilibili.com/video/BV1nB4y1R7Yz/)
 - ✅[Zero 论文精读[论文精读]](https://www.bilibili.com/video/BV1tY411g7ZT/)
-- 🔲[InstructGPT 论文精读[论文精读·48]](https://www.bilibili.com/video/BV1hd4y187CR/)
-- 🔲[HELM 全面语言模型评测[论文精读·50]](https://www.bilibili.com/video/BV1z24y1B7uX/)
-- 🔲[Anthropic LLM 论文精读[论文精读·51]](https://www.bilibili.com/video/BV1XY411B7nM/)
-- 🔲[GPT-4论文精读【论文精读·53】](https://www.bilibili.com/video/BV1vM4y1U7b5/)
+- ✅[InstructGPT 论文精读[论文精读·48]](https://www.bilibili.com/video/BV1hd4y187CR/)
+- ✅[HELM 全面语言模型评测[论文精读·50]](https://www.bilibili.com/video/BV1z24y1B7uX/)
+- ✅[Anthropic LLM 论文精读[论文精读·51]](https://www.bilibili.com/video/BV1XY411B7nM/)
+- ✅[GPT-4论文精读【论文精读·53】](https://www.bilibili.com/video/BV1vM4y1U7b5/)
 
 ---
 
@@ -72,9 +72,9 @@ tags: Explore LLM
 
 ## **PaLM inference**
 
-- 🔲[Blog](https://ai.googleblog.com/2022/04/pathways-language-model-palm-scaling-to.html)
+- ✅[Blog](https://ai.googleblog.com/2022/04/pathways-language-model-palm-scaling-to.html)
   ![1679629332417](../images/2023-03-25-llm-singlegpu/1679629332417.gif)
-- 🔲[PaLM: Scaling Language Modeling with Pathways](https://arxiv.org/pdf/2204.02311.pdf)
+- ✅[PaLM: Scaling Language Modeling with Pathways](https://arxiv.org/pdf/2204.02311.pdf)
 
 > 模型层面主要有如下改动：使用SwiGLU激活函数，有研究证明在同等计算量下SwiGLU的效果更好把FFN和Attention并行
 
@@ -157,7 +157,7 @@ tags: Explore LLM
 ## **Huggingface**
 
 - 🔲[https://arxiv.org/abs/1910.03771](https://arxiv.org/abs/1910.03771)
-- 🔲 [https://huggingface.co/docs/accelerate/index](https://huggingface.co/docs/accelerate/index)
+- 🔲[https://huggingface.co/docs/accelerate/index](https://huggingface.co/docs/accelerate/index)
 - 
 
 ---
@@ -193,9 +193,9 @@ tags: Explore LLM
 > 显式重排是一种运行时重新排列激活中通道的操作，需要将不同通道的数据从一个内存位置物理移动到另一个位置，因此对于具有大量通道的大型模型，重排过程可能非常耗时。**此外，存储源和目标激活张量会增加内存开销。**因此，作者提出了避免显式重新排序的策略，从而降低了计算开销，提高了推理效率。
 > 如图 3 所示，作者重新排序线性层的权重，使它们能够直接按照排序顺序产生激活。此外，作者修改了 LayerNorm 的方法，使其能够直接产生重新排序的激活，从而省去了在推理过程中进行显式通道调整。
 
-## 🔲[OpenAI 工程师 lilianweng 关于LLM推理计算优化的方法概述](https://lilianweng.github.io/posts/2023-01-10-inference-optimization/)
+## ✅[OpenAI 工程师 lilianweng 关于LLM推理计算优化的方法概述](https://lilianweng.github.io/posts/2023-01-10-inference-optimization/)
 
-## [SparseGPT: Remove 100 Billion Parameters for Free](https://neuralmagic.com/blog/sparsegpt-remove-100-billion-parameters-for-free/)
+## ✅[SparseGPT: Remove 100 Billion Parameters for Free](https://neuralmagic.com/blog/sparsegpt-remove-100-billion-parameters-for-free/)
 
 > Several methods can be used to make inference cheaper in memory or/and faster in time.
 >
