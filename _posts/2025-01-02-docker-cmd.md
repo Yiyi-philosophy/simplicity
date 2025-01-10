@@ -112,5 +112,5 @@ conda activate reft
 
 [VSCode远程调试Python - 李理的博客](https://fancyerii.github.io/2023/09/25/py-remote-debug/#安装debugpy)
 
-
+[Poetry插件导出教程](https://blog.csdn.net/gitblog_00765/article/details/141838844)
 
