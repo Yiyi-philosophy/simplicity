@@ -4,14 +4,23 @@ layout: compress
 {% include helper/_1_head.html %}
 
 <!-- MathJax -->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-    extensions: ["cancel.js"]  <!-- Enable cancel extension -->
-  });
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      packages: {'[+]': ['cancel', 'color']}  // 添加 cancel 和 color 包
+    },
+    svg: {
+      fontCache: 'global'
+    },
+    loader: {
+      load: ['[tex]/cancel', '[tex]/color']  // 加载 cancel 和 color 扩展
+    }
+  };
 </script>
-<script type="text/javascript" async 
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 
 {% include helper/_2_topbar_navigation.html %}
