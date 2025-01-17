@@ -3,24 +3,35 @@ layout: compress
 ---
 {% include helper/_1_head.html %}
 
-<!-- MathJax -->
-
+<!-- MathJax Configuration -->
 <script>
-  MathJax = {
+  window.MathJax = {
     tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      packages: {'[+]': ['cancel', 'color']}  // 添加 cancel 和 color 包
+      inlineMath: [['$', '$'], ['\\(', '\\)']],  // 行内公式分隔符
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],  // 块级公式分隔符
+      packages: {'[+]': ['cancel', 'color', 'amsmath']},  // 添加额外的 TeX 包
+      processEscapes: true,  // 允许使用 \$ 表示普通美元符号
+      processEnvironments: true,  // 处理 LaTeX 环境（如 \begin{equation}）
     },
     svg: {
-      fontCache: 'global'
+      fontCache: 'global'  // 使用全局字体缓存
     },
     loader: {
-      load: ['[tex]/cancel', '[tex]/color']  // 加载 cancel 和 color 扩展
+      load: ['[tex]/cancel', '[tex]/color', '[tex]/amsmath']  // 加载额外的 TeX 扩展
+    },
+    startup: {
+      typeset: true,  // 页面加载时自动渲染公式
+      pageReady: () => {
+        // 页面加载完成后触发的回调
+        console.log('MathJax is ready!');
+      }
     }
   };
 </script>
+
+<!-- Load MathJax -->
 <script type="text/javascript" id="MathJax-script" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 
 {% include helper/_2_topbar_navigation.html %}
