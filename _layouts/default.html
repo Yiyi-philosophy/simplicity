@@ -10,11 +10,6 @@ layout: compress
       inlineMath: [['$', '$'], ['\\(', '\\)']],  // 行内公式分隔符
       displayMath: [['$$', '$$'], ['\\[', '\\]']],  // 块级公式分隔符
       packages: {'[+]': ['cancel', 'color', 'amsmath']},  // 添加额外的 TeX 包
-      processEscapes: true,  // 允许使用 \$ 表示普通美元符号
-      processEnvironments: true,  // 处理 LaTeX 环境（如 \begin{equation}）
-    },
-    svg: {
-      fontCache: 'global'  // 使用全局字体缓存
     },
     loader: {
       load: ['[tex]/cancel', '[tex]/color', '[tex]/amsmath']  // 加载额外的 TeX 扩展
