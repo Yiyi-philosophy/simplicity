@@ -4,20 +4,19 @@ layout: compress
 {% include helper/_1_head.html %}
 
 <!-- MathJax Configuration -->
-<script type="text/x-mathjax-config">
+<script>
   MathJax = {
     tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],  // 行内公式分隔符
-      displayMath: [['$$', '$$'], ['\\[', '\\]']],  // 块级公式分隔符
-      packages: {'[+]': ['cancel', 'color', 'amsmath']},  // 添加额外的 TeX 包
+      inlineMath: [['$', '$'], ['\\(', '\\)']],  
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],  
+      packages: {'[+]': ['cancel', 'color', 'amsmath']},  
     },
     loader: {
-      load: ['[tex]/cancel', '[tex]/color', '[tex]/amsmath']  // 加载额外的 TeX 扩展
+      load: ['[tex]/cancel', '[tex]/color', '[tex]/amsmath']  
     },
     startup: {
-      typeset: true,  // 页面加载时自动渲染公式
+      typeset: true,  
       pageReady: () => {
-        // 页面加载完成后触发的回调
         console.log('MathJax is ready!');
       }
     }
