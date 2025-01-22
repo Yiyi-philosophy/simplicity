@@ -30,6 +30,9 @@ sfpt username@1.1.1.1
 > put /a /b # mv local to remote
 > get /b /a # mv remote to local
 ```
+# Rclone mount
+[https://rclone.cn/rclone_mount.html](https://rclone.cn/rclone_mount.html)
+
 ---
 # miniconda
 
